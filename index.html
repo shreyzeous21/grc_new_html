@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css" />
+
+    <title>New GRC</title>
+    <style>
+      .border-none :hover{
+        border: none;
+      }
+      .border-none{
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flex justify-center items-center flex-col w-full mx-auto">
+      <header class="w-full flex justify-center items-center relative">
+        <div class="w-full items-center justify-center lg:px-0 px-4">
+          <div class="flex flex-row justify-between items-center">
+            <div class="lg:w-1/6 w-40 lg:py-0 lg:ml-30 py-4">
+              <img style="padding-right: 10px;" src="assets//grc-full-color-15-years-(1).jpg" alt="" />
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button
+              class="lg:hidden block text-2xl"
+              onclick="toggleMobileMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Desktop Menu -->
+            <div class="lg:block hidden">
+              <div class="w-full py-4 flex justify-center items-center">
+                <ul
+                  class="flex flex-row gap-6 justify-center items-center uppercase">
+                  <li class="hover:text-green-500"><a href="#">Support</a></li>
+                  <li class="hover:text-green-500">
+                    <a href="#">Learning Center</a>
+                  </li>
+                  <li class="hover:text-green-500"><a href="#">About Us</a></li>
+                  <li class="hover:text-green-500"><a href="#">News</a></li>
+                  <li class="hover:text-green-500">
+                    <a href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-[#bbc2c8] w-full mr-40 py-6">
+                <ul
+                  class="flex flex-row gap-6 ml-6 justify-start items-center ">
+                  <li class="hover:text-white">
+                    <a href="#" class="uppercase"> Home </a>
+                  </li>
+
+                  <!-- <li class="relative group hover:text-white z-50 cursor-pointer">
+                    <a href="#" class="block">Products <i class="fa-solid fa-angle-down"></i></a>
+                   
+                  </li> -->
+
+                  <li class="static " data-twe-nav-item-ref data-twe-dropdown-ref>
+                    <a
+                      class="flex items-center whitespace-nowrap py-2 pe-1 text-black transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none uppercase  lg:px-2"
+                      href="#"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-twe-dropdown-toggle-ref
+                      aria-expanded="false"
+                      data-twe-nav-link-ref
+                      >Products
+                      <span class="ms-2 [&>svg]:h-5 [&>svg]:w-5">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor">
+                          <path
+                            fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                            clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </a>
+                    <div
+                      class="absolute left-0 right-0 top-full z-50 mt-0 hidden w-full border-none bg-white bg-clip-padding data-[twe-dropdown-show]:block dark:bg-surface-dark"
+                      aria-labelledby="dropdownMenuButton1"
+                      data-twe-dropdown-menu-ref>
+                      <div class="px-6 py-5 lg:px-8">
+                        <div class="grid gap-6 lg:grid-cols-3">
+                          <div>
+                           <img src="/assets/HashRaQ2.jpg" alt="" class="h-50 w-100 object-cover object-center">
+                          </div>
+                          <div>
+                          
+                            <a
+                              href="#!"
+                              aria-current="true"
+                              class="block w-full border-b border-neutral-100 bg-white px-6 py-1 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline"
+                              >ICEreQ <sup>®</sup>
+                              <p class="text-[9px]">Micro-Modular, Rack-Based Immersion Cooling System</p>
+                              </a
+                            >
+                            <a
+                              href="#!"
+                              aria-current="true"
+                              class="block w-full border-b border-neutral-100 bg-white px-6 py-1 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline"
+                              >ICEtank <sup>®</sup>
+                              <p class="text-[9px]">Modular Data Center</p>
+                              </a
+                            >
+                            <a
+                              href="#!"
+                              aria-current="true"
+                              class="block w-full border-b border-neutral-100 bg-white px-6 py-1 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline"
+                              >HashRaQ MAX <sup>®</sup>
+                              <p class="text-[9px]">Immersion Cooling System for Blockchain Operations</p>
+                              </a
+                            >
+                            <a
+                              href="#!"
+                              aria-current="true"
+                              class="block w-full border-b border-neutral-100 bg-white px-6 py-1 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline"
+                              >ElectroSafe<sup>®</sup>
+                              
+                              </a
+                            >
+                            
+                           
+                          </div>
+                          <div>
+                           <h1 class="text-[25px] pt-12">Next-Gen Immersion Cooling, <br>
+                            Maximize Performance, <br>
+                            Minimize Costs</h1>
+                          </div>
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  
+
+                  
+                  <li class="hover:text-white"><a href="#" class="uppercase"> Solutions </a></li>
+                  <li class="hover:text-white">
+                    <a href="#" class="uppercase"> Immersion-Ready IT </a>
+                  </li>
+                  <li class="hover:text-white"><a href="#" class="uppercase"> Blogs </a></li>
+                  <li class="hover:text-white"><a href="#" class="uppercase"> Partner </a></li>
+                  <li class="hover:text-white">
+                    <a href="#" class="bg-green-500 py-8 px-2 uppercase">
+                      Login / Register
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <div
+              id="mobileMenu"
+              class="lg:hidden hidden fixed top-0 left-0 w-full h-full bg-white z-50">
+              <div class="flex flex-col h-full">
+                <div class="flex justify-between items-center p-4 border-b">
+                  <div class="w-40">
+                    <img src="assets/grc-full-color-15-years-(1).jpg" alt="" />
+                  </div>
+                  <button class="text-2xl" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+                <div class="flex-1 overflow-y-auto">
+                  <ul class="flex flex-col uppercase">
+                    <li class="border-b">
+                      <a href="#" class="block p-4">Support</a>
+                    </li>
+                    <li class="border-b">
+                      <a href="#" class="block p-4">Learning Center</a>
+                    </li>
+                    <li class="border-b">
+                      <a href="#" class="block p-4">About Us</a>
+                    </li>
+                    <li class="border-b">
+                      <a href="#" class="block p-4">News</a>
+                    </li>
+                    <li class="border-b">
+                      <a href="#" class="block p-4">Contact Us</a>
+                    </li>
+                    <li class="border-b">
+                      <a href="#" class="block p-4">Home</a>
+                    </li>
+                    <li class="border-b">
+                      <a href="#" class="block p-4">Products</a>
+                    </li>
+                    <li class="border-b">
+                      <a href="#" class="block p-4">Solutions</a>
+                    </li>
+                    <li class="border-b">
+                      <a href="#" class="block p-4">Immersion-Ready IT</a>
+                    </li>
+                    <li class="border-b">
+                      <a href="#" class="block p-4">Blogs</a>
+                    </li>
+                    <li class="border-b">
+                      <a href="#" class="block p-4">Partner</a>
+                    </li>
+                    <li class="border-b">
+                      <a href="#" class="block p-4 bg-green-500 text-white"
+                        >Login / Register</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+
+      <div
+        class="w-full mx-auto flex-col gap-0 jusitfy-ceter items-center flex">
+        
+       
+
+        <section class="relative w-full h-[50vh] lg:h-screen">
+          <div class="grp-slider-container">
+           
+            <div class="grp-slider">
+              <div class="grp-slide" style="background-image: url('assets/Hero-Image-1.png');">
+                <div style="display: flex;" class="header-content">
+                  <div  class="headings">
+                    <span style="position: relative; " class="uppercase font-semibold text-white text-sm">
+                      Hyperscale Data Center
+                    </span>
+                   
+                    <h2 class="text-[32pt] leading-tight text-white">Frustrated with your<br>
+                      under-performance ITE,<br>
+                      inefficient power use<br>
+                      and increase cost? </h2>
+
+                      <span style="position: relative; " class="uppercase font-semibold text-white text-sm">
+                        Check out our Cooling Solutions Today!
+                      </span>
+                      
+                   
+                     
+                  </div>
+                 
+                </div>
+
+
+              </div>
+    
+              <div class="grp-slide" style="background-image: url('assets/Hero-Image-2.png');">
+                <div style="display: flex;" class="header-content">
+                  <div class="headings">
+                    <span style="position: relative; " class="uppercase font-semibold text-white text-sm">
+                      Hyperscale Data Center
+                    </span>
+                   
+                    <h2 class="text-[32pt] leading-tight text-white">Frustrated with your<br>
+                      under-performance ITE,<br>
+                      inefficient power use<br>
+                      and increase cost? </h2>
+
+                      <span style="position: relative; " class="uppercase font-semibold text-white text-sm">
+                        Check out our Cooling Solutions Today!
+                      </span>
+                      
+                   
+                     
+                  </div>
+                 
+                </div>
+              </div>
+             
+            </div>
+            
+            <div class="grp-slider-arrow grp-slider-arrow-left" onclick="moveSlide(-1)">&#10094;</div>
+            <div class="grp-slider-arrow grp-slider-arrow-right" onclick="moveSlide(1)">&#10095;</div>
+          
+            <div class="grp-pagination">
+              <div class="grp-pagination-dot" onclick="currentSlide(1)"><h3>Hyperscale Data Center</h3></div>
+              <div class="grp-pagination-dot" onclick="currentSlide(2)"><h3>Hyperscale Data Center</h3></div>
+              <!-- <div class="grp-pagination-dot" onclick="currentSlide(3)"><h3>three</h3></div> -->
+            </div>
+          </div>
+          
+        </section>
+
+        <section  class="w-full flex py-10 justify-center items-center px-4">
+          <div data-aos="fade-in"
+            class="w-full flex flex-col max-w-6xl gap-10 mx-auto justify-center items-center">
+            <p style="font-weight:lighter ;" class="text-[32pt] leading-tight text-gray-500">
+              Experience the
+              <span class="text-blue-500">
+                next-generation immersion cooling solutions from GRC.</span
+              >
+              We increase Performance, Enhance Sustainability and
+              <span class="text-blue-500">Optimize TCO</span> of the Data Center
+              making high-powered computing accessible for everyone.
+            </p>
+            <div
+              class="w-full gap-10 flex lg:flex-row flex-col justify-between items-center">
+              <button
+                class="text-white lg:w-1/8 w-1/2 text-sm  uppercase  px-4 py-2 bg-[#6dbc45]">
+                <a href="#"> Know More </a>
+              </button>
+
+              <ul
+                class="grid lg:grid-cols-5 grid-cols-3 gap-3 lg:justify-end jusitfy-center uppercase items-center">
+                <li class="flex flex-col text-sm items-center gap-2">
+                  <img style="height: 100px;" src="assets/Cost Effective.jpg"
+                    ></img
+                  >cost effective
+                </li>
+                <li class="flex flex-col text-sm items-center gap-2">
+                  <img style="height: 100px;" src="assets/Agile-png.jpg" 
+                    ></img
+                  >Agile
+                </li>
+                <li class="flex flex-col text-sm items-center gap-2">
+                  <img style="height: 100px;" src="assets/Scalable.jpg"
+                    ></img
+                  >Scalable
+                </li>
+                <li class="flex flex-col text-sm items-center gap-2">
+                  <img style="height: 100px;" src="assets/Efficient-png.jpg"
+                    ></img
+                  >Efficient
+                </li>
+                <li class="flex flex-col text-sm items-center gap-2">
+                  <img style="height: 100px;" src="assets/Future-Proof-png.jpg"
+                   ></img
+                  >Future Proof
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="text-slate-700 bg-[#dddddd] w-full">
+          <div
+            class="w-full grid lg:grid-cols-2 grid-col-1 mx-auto justify-center items-center">
+            <div
+              class="w-full bg-[#dddddd] lg:pl-32 px-4 py-10 items-start flex flex-col gap-10 w-full">
+              <span style="font-weight: lighter; font-size: 15px;" class="uppercase font-semibold text-[22px]">
+                Immersion cooling solutions
+              </span>
+              <h1 style="color: #8c8c8e; font-size: 32px;" class="text-[36px] w-90 leading-tight">
+                Trust us, we have a solution for your Data Center Cooling
+                problem.Be it Increase in Performance, Efficiency or
+                Optimize TCO
+              </h1>
+              <button
+                class="text-white lg:w-1/4 w-50 text-sm  uppercase  px-4 py-2 bg-[#6dbc45]">
+                <a href="#"> Know More </a>
+              </button>
+            </div>
+
+            <div
+              class="h-full w-full lg:pb-0 pb-10 items-center jusitfy-center mx-auto gap-2 grid grid-cols-2">
+              <div data-aos="fade-up" style="font-size: 25px;"
+                class="bg-black lg:w-full lg:h-75 w-auto h-60 text-white p-4 bg-[url('assets/AI-&-Machine-Learning.jpg')] bg-center bg-cover uppercase text-sm">
+                Ai & Machine Learning
+              </div>
+              <div data-aos="fade-up" style="font-size: 25px;"
+                class="bg-black lg:w-full lg:h-75 w-auto h-60 text-white p-4 bg-[url('assets/High-Performance-Computing.jpg')] bg-center bg-cover uppercase text-sm">
+                High Performance Computing
+              </div>
+              <div data-aos="fade-down" style="font-size: 25px;"
+                class="bg-black lg:w-full lg:h-75 w-auto h-60 text-white p-4 bg-[url('assets/Blockchain.jpg')] bg-center bg-cover uppercase text-sm">
+                Blockchain And Crypto
+              </div>
+              <div data-aos="fade-down" style="font-size: 25px;"
+                class="bg-black lg:w-full lg:h-75 w-auto h-60 text-white p-4 bg-[url('assets/Cloud-Computing.jpg')] bg-center bg-cover uppercase text-sm">
+                Enterprise / Cloud Hyperscale
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class=" w-full py-10">
+          <div class="mx-auto max-w-6xl">
+            <div
+              class="mb-14 flex flex-col justify-center items-center sm:flex-row sm:items-center sm:justify-between max-sm:gap-8">
+              <div data-aos="fade-down" class="flex flex-col gap-4">
+                <span style="font-weight: lighter; font-size: 15px;" class="uppercase font-semibold text-[22px]">product Spotlight</span>
+                <h1 class="text-4xl leading-tight text-slate-600">
+                  
+                  Redefining the Efficiency and Sustainability<br/>
+                  of Data Center with Immersive Cooling Technology
+                
+                  
+                </h1>
+              </div>
+              <!-- Slider controls -->
+              <div class="flex items-center gap-8">
+                <button
+                  id="slider-button-left"
+                  class="swiper-button-prev group flex  transition-all duration-500 rounded-full hover:bg-indigo-600"
+                  data-carousel-prev
+                  style="width:50px;">
+                  <img src="assets/prev.png"/>
+                </button>
+                <button 
+                  id="slider-button-right"
+                  class="swiper-button-next group flex justify-center items-center border-indigo-600 w-12 h-12 transition-all duration-500 rounded-full hover:bg-indigo-600"
+                  data-carousel-next style="width:50px;">
+                  <img src="assets/next.png"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!--Slider wrapper-->
+            <div
+              class="lg:flex grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-8 swiper mySwiper border-none">
+              <div class="swiper-wrapper swiper-wrapper-two">
+               
+                
+                
+                <div
+                class="swiper-slide super-slider-two group  bg-[#c7c7c7]   p-6 transition-all duration-500 w-full  border-none">
+                <div class=" lg:h-65 h-80  flex flex-row mx-auto transition-transform duration-500 ease-in-out top-0" style="transform: translateX(0%); opacity: 1; pointer-events: auto;">
+                    <div class="flex justify-start items-start flex-col gap-2 w-1/2" style="padding:10px;">
+                        <img style="width: 120px; position: relative; top: 14px;" src="assets/ICE-Tank-Logo.png" alt="">
+                        <h3 class="text-slate-600 text-sm" style="color:#343434">Modular Immersion Cooling System for Blockchain Operation
+                        </h3>
+                        <p class="text-slate-600 text-sm" style="color:#343434">A turnkey mining data center built inside ISo Shipping containers, giving total local flexibility.</p>
+                        <button class="cursor-pointer text-green-600 hover:underline" style="padding-top:10px;font-size:15px;">Know More</button>
+                    </div>
+                    
+                    <div class="w-1/2 bg-[url('assets/Get-immersion-ready.png')] bg-center bg-cover h-full">
+                      
+                    </div>
+              </div>
+              </div>
+
+              <div
+                class="swiper-slide super-slider-two group  bg-[#c7c7c7]   p-6 transition-all duration-500 w-full  border-none">
+                <div class=" lg:h-65 h-80  flex flex-row mx-auto transition-transform duration-500 ease-in-out top-0" style="transform: translateX(0%); opacity: 1; pointer-events: auto;">
+                    <div class="flex justify-start items-start flex-col gap-2 w-1/2" style="padding:10px;">
+                      <img style="width: 150px; position: relative; top: 10px;" src="assets/HasRaQ-Logo.png" alt="">
+                      <h3 class="text-slate-600 text-sm" style="color:#343434">Next Evolution Cooling for Blockchain Operation</h3>
+                        <p class="text-slate-600 text-sm" style="color:#343434">Our ROI-focused HashRaQ MAX is a powerful, sustainable and affordable cooling system, engineered for reliability.</p>
+                        <button class="cursor-pointer text-green-600 hover:underline" style="padding-top:10px;font-size:15px;">Know More</button>
+                    </div>
+                    
+                    <div class="w-1/2 bg-[url('assets/HashRaQ2.jpg')] bg-center bg-cover h-full">
+                      
+                    </div>
+              </div>
+              </div>
+
+
+              <div
+                class="swiper-slide super-slider-two group  bg-[#c7c7c7]   p-6 transition-all duration-500 w-full  border-none">
+                <div class=" lg:h-65 h-80  flex flex-row mx-auto transition-transform duration-500 ease-in-out top-0" style="transform: translateX(0%); opacity: 1; pointer-events: auto;">
+                    <div class="flex justify-start items-start flex-col gap-2 w-1/2" style="padding:10px;">
+                      <img style="width: 120px; position: relative; top: 14px;" src="assets/HashTank.png" alt="">
+                        <h3 class="text-slate-600 text-sm" style="color:#343434">Next Evolution Cooling for Blockchain Operation
+                        </h3>
+                        <p class="text-slate-600 text-sm" style="color:#343434">Our ROI-focused HashRaQ MAX is a powerful, sustainable and affordable cooling system, engineered for reliability.</p>
+                        <button class="cursor-pointer text-green-600 hover:underline" style="padding-top:10px;font-size:15px;">Know More</button>
+                    </div>
+                    
+                    <div class="w-1/2 bg-[url('assets/Get-immersion-ready.png')] bg-center bg-cover h-full">
+                      
+                    </div>
+              </div>
+              </div>
+
+
+              <div
+              class="swiper-slide super-slider-two group  bg-[#c7c7c7]   p-6 transition-all duration-500 w-full  border-none">
+              <div class=" lg:h-65 h-80  flex flex-row mx-auto transition-transform duration-500 ease-in-out top-0" style="transform: translateX(0%); opacity: 1; pointer-events: auto;">
+                  <div class="flex justify-start items-start flex-col gap-2 w-1/2" style="padding:10px;">
+                    <img style="width: 150px; position: relative; top: 12px;" src="assets/HasRaQ-Logo.png" alt="">
+                    <h3 class="text-slate-600 text-sm" style="color:#343434">Next Evolution Cooling for Blockchain Operation</h3>
+                      <p class="text-slate-600 text-sm" style="color:#343434">Our ROI-focused HashRaQ MAX is a powerful, sustainable and affordable cooling system, engineered for reliability.</p>
+                      <button class="cursor-pointer text-green-600 hover:underline" style="padding-top:10px;font-size:15px;">Know More</button>
+                  </div>
+                  
+                  <div class="w-1/2 bg-[url('assets/HashRaQ2.jpg')] bg-center bg-cover h-full">
+                    
+                  </div>
+            </div>
+            </div>
+
+
+            </div>
+          </div>
+        </section>
+
+
+      
+
+        <section class="w-full px-4 justify-center py-10 items-center">
+          <div class="max-w-6xl w-full justify-center items-center mx-auto">
+            <div 
+              class="flex w-full items-center justify-center gap-10 flex-col">
+              <div data-aos="zoom-out"
+                class="flex lg:flex-row flex-col gap-5 w-full h-[60vh] max-w-4xl items-center justify-center">
+                <div style="align-items: flex-end; padding-right: 20px;"
+                  class="lg:w-1/2 w-full  justify-center flex flex-col gap-5">
+                  <span style="font-weight: lighter; font-size: 15px;" class="uppercase font-semibold text-[22px]">It Ready Solutions</span>
+                  <h1 style=" font-size: 32px;  text-align:end; color:#949494; " class="text-4xl leading-tight text-slate-600">
+                    Get Immersion-Ready Servers, Direct From Your Trusted
+                    Service Provider
+                  </h1>
+                  <button
+                    class="text-white w-1/3 text-sm  uppercase  px-4 py-2 bg-[#6dbc45]">
+                    <a href="#"> Know More </a>
+                  </button>
+                </div>
+                <div
+                  class="lg:w-1/2 w-full bg-[url('assets/GetImmersion-Ready.jpg')] bg-center bg-cover h-full"></div>
+              </div>
+
+              <div data-aos="zoom-out"
+                class="flex lg:flex-row-reverse flex-col gap-5 w-full h-[60vh] max-w-4xl items-center justify-center">
+                <div style="padding-left: 20px;"
+                  class="lg:w-1/2 w-full items-start justify-center flex flex-col gap-5">
+                  <span style="font-weight: lighter; color: #aaaaaa; font-size: 15px;" class="uppercase font-semibold text-[22px]">Optimize tco</span>
+
+                  <h1 style="font-size: 32px;color:#949494;" class="text-4xl leading-tight text-slate-600">
+                    Drive 90% decrease in CapEx & Significant Increase Opex, Of
+                    your Data Center
+                  </h1>
+                  <button
+                    class="text-white w-1/3 text-sm  uppercase  px-4 py-2 bg-[#6dbc45]">
+                    <a href="#"> Know More </a>
+                  </button>
+                </div>
+                <div
+                  class="lg:w-1/2 w-full bg-[url('assets/Drive90.jpg')] bg-center bg-cover h-full"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      
+
+        <section class="bg-[#dddddd] w-full py-10">
+          <div class="mx-auto max-w-6xl">
+            <div
+              class="mb-14 flex flex-col justify-center items-center sm:flex-row sm:items-center sm:justify-between max-sm:gap-8">
+              <div class="flex flex-col gap-4" data-aos="fade-down" >
+                <span style="font-weight: lighter; font-size: 15px;" class="uppercase font-semibold text-[22px]">Customer Trust Us</span>
+                <h1 class="text-4xl leading-tight text-slate-600">
+                  Celebrating 15 Years of Immersion Cooling Authority
+                </h1>
+              </div>
+              <!-- Slider controls -->
+              <div  class="flex items-center gap-8" style="margin-right: -54px;">
+                <button style="top: 259px;"
+                  id="slider-button-left"
+                  class="swiper-button-prev group flex justify-center items-center  w-12 h-12 transition-all duration-500 rounded-full hover:bg-indigo-600"
+                  data-carousel-prev>
+                  <img src="assets/prev.png">
+                </button>
+                <button style="top: 259px;"
+                  id="slider-button-right"
+                  class="swiper-button-next group flex justify-center items-center  w-12 h-12 transition-all duration-500 rounded-full hover:bg-indigo-600"
+                  data-carousel-next>
+                  <img src="assets/next.png">
+                </button>
+              </div>
+            </div>
+            <!--Slider wrapper-->
+            <div
+              class="lg:flex grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-8 swiper mySwiper2 border-none">
+              <div class="swiper-wrapper">
+                <div data-aos="zoom-in"
+                  class="swiper-slide width-326  group bg-white   p-6 transition-all duration-500 w-full border-none  ">
+                  <div
+                  class="bg-white h-full w-full  flex flex-col text-center gap-4 items-center justify-center">
+                  <img
+                    src="https://greenfactor.in/new-grc/cs-vsc-logo.jpg"
+                    alt=""
+                    class="h-auto w-40" />
+                  <p class="text-slate-600 text-sm w-50">
+                    “We are setting new standards here…where we can examine
+                    complex questions to an even better level, but also in terms
+                    of sustainability.”
+                  </p>
+                  <button class="text-green-600 cursor-pointer">
+                    View More
+                  </button>
+                </div>
+                </div>
+
+                
+
+                <div data-aos="zoom-in"
+                  class="swiper-slide width-326 group bg-white  p-6 transition-all duration-500 w-full  ">
+                  <div
+                  class="bg-white h-full w-full  lg:flex hidden flex-col text-center gap-4 items-center justify-center">
+                  <img style="height: 100px;"
+                    src="https://greenfactor.in/new-grc/cs-tacc-logo.jpg"
+                    alt=""
+                    class="h-auto w-40" />
+                  <p class="text-slate-600 text-sm w-50">
+                    “We had limited space, power and cooling. GRC’s tech made it
+                    possible to add capacity in a storage area, while reducing
+                    power requirements by 30%.”
+                  </p>
+                  <button class="text-green-600 cursor-pointer">
+                    View More
+                  </button>
+                </div>
+                </div>
+
+                <div data-aos="zoom-in"
+                  class="swiper-slide width-326 group bg-white  p-6 transition-all duration-500 w-full">
+                 <div
+                  class="bg-white h-full w-full  lg:flex hidden flex-col text-center gap-4 items-center justify-center">
+                  <img
+                    src="https://greenfactor.in/new-grc/cs-intel-logo.jpg"
+                    alt=""
+                    class="h-auto w-40" />
+                  <p class="text-slate-600 text-sm w-50">
+                    “We’ve proven to ourselves that they are efficient. It could
+                    mean that a higher clock speed is possible in an oil
+                    immersion installation.”
+                  </p>
+                  <button class="text-green-600 cursor-pointer">
+                    View More
+                  </button>
+                </div>
+                </div>
+                
+                <div
+                class="swiper-slide width-326 group bg-white   p-6 transition-all duration-500 w-full  border-none">
+                <div
+                class="bg-white h-full w-full  flex flex-col text-center gap-4 items-center justify-center">
+                <img
+                  src="https://greenfactor.in/new-grc/cs-vsc-logo.jpg"
+                  alt=""
+                  class="h-auto w-40" />
+                <p class="text-slate-600 text-sm w-50">
+                  “We are setting new standards here…where we can examine
+                  complex questions to an even better level, but also in terms
+                  of sustainability.”
+                </p>
+                <button class="text-green-600 cursor-pointer">
+                  View More
+                </button>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+
+        <section 
+          class="px-4 bg-[url('https://greenfactor.in/new-grc/assests/images/banner_one.jpg')] bg-center bg-cover bg-fixed  justify-center h-screen items-center w-full">
+          <div
+            class="max-w-6xl w-full h-full justify-center items-center mx-auto">
+            <div data-aos="fade-up-down"
+              class="flex lg:w-[70vw] w-full items-start justify-center h-full space-y-8 flex-col">
+              <span class="uppercase font-semibold text-green-500 text-sm">
+                Why Grc?
+              </span>
+              <h1 class="text-[38px] leading-tight text-white">
+                We Increase Performance, Enhance Sustainability and Optimize TCO
+                of the Data Center with our Immersive Cooling Technology. A
+                legacy spanning
+                <span class="text-green-500">
+                  15 years of Immersion Cooling Authority</span
+                >, and deployment across
+                <span class="text-green-500"> 21 countries worldwide. </span>
+              </h1>
+              <button
+                class="text-white lg:w-1/8 w-1/2 text-sm  uppercase   py-2 bg-[#6dbc45]">
+                <a href="#"> Know More </a>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section style="background: #d2d1d6;" class="flex py-10 items-center justify-center mx-auto w-full">
+          <div data-aos="fade-up-down"
+            class="max-w-6xl w-full h-full justify-center items-center mx-auto">
+            <div
+              class="flex justify-center lg:items-end items-center gap-10 flex-col lg:flex-row w-full">
+              <div class="relative w-full h-100">
+                <img
+                  src="https://greenfactor.in/new-grc/assests/images/banner_one.jpg"
+                  alt=""
+                  class="w-full h-full object-cover object-center" />
+
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center transition duration-300">
+                  <i class="fa-solid fa-play text-6xl text-gray-100"></i>
+                </a>
+              </div>
+
+              <div style="padding-bottom: 23px;" class="lg:w-1/2 px-4 w-full flex flex-col gap-4">
+                <h1 class="text-4xl text-slate-600">
+                  Immersive Cooling Advantages
+                </h1>
+                <ul class="ml-4" style="list-style-type: square;">
+                  <li>Rapidly deploy in any environment</li>
+                  <li>Cools up to 60 KW/rack</li>
+                  <li>Up to 90% lower cooling energy consumption</li>
+                  <li>Attain mPUE <1.05</li>
+                  <li>11% lower server power draw(on average)</li>
+                  <li>CPU-/GPU-agnostic</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="w-full flex justify-center items-center mx-auto">
+          <div
+            class="w-full grid lg:grid-cols-2 grid-cols-1 justify-center items-center">
+            <div data-aos="fade-up-down"
+              class="relative py-10 lg:h-screen h-[60vh] flex flex-col bg-center bg-cover bg-[url('assets/Map-700x700.png')]">
+              <div style="padding-top:40px;"
+                class="relative w-full  flex flex-col  lg:px-30 px-4 z-10">
+                <span class="uppercase font-semibold text-slate-600 text-sm">
+                  Global Footprint
+                </span>
+                <h1 style="text-align: left; font-size: 30px;" class="text-4xl leading-tight text-slate-600 text-center">
+                  We're the World's <br> Immersion Cooling Authority
+                </h1>
+              </div>
+            </div>
+
+            <div data-aos="fade-up-down"
+              class="w-full bg-[url('assets/Connect-with-us.png')] bg-center lg:h-screen h-full bg-cover items-start py-3 flex flex-col  px-10">
+              <h2 style="padding-top: 28px;" class="text-3xl font-semibold text-black mb-10">
+                Connect with out team to explore rhw optimal immersion liquid
+                cooling solutions for your organization
+              </h2>
+              <form
+                action="" style="gap: 40px;"
+                class="grid lg:grid-cols-2 grid-cols-1  w-full max-w-2xl">
+                <div class="flex">
+                  <input
+                    id="message2"
+                    name="message2"
+                    class="border-b-2 w-full outline-none"
+                    placeholder="Enquiry Type" />
+                </div>
+                <div class="flex">
+                  <input
+                    id="message"
+                    name="message"
+                    class="border-b-2 w-full outline-none"
+                    placeholder="Message" />
+                </div>
+                <div class="flex">
+                  <input
+                    type="text"
+                    id="name"
+                    name="f_name"
+                    placeholder="First Name"
+                    class="border-b-2 w-full outline-none" />
+                </div>
+                <div class="flex">
+                  <input
+                    type="text"
+                    id="name"
+                    name="l_name"
+                    placeholder="Last Name"
+                    class="border-b-2 w-full outline-none" />
+                </div>
+                <div class="flex">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    class="border-b-2 w-full outline-none" />
+                </div>
+                <div class="flex">
+                  <input
+                    type="text"
+                    id="message1"
+                    name="message1"
+                    placeholder="Where do you here us?"
+                    class="border-b-2 w-full outline-none" />
+                </div>
+                <div class="flex">
+                  <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    placeholder="Country"
+                    class="border-b-2 w-full outline-none" />
+                </div>
+                <div class="flex">
+                  <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    class="border-b-2 w-full outline-none" />
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <label for="insights" class="text-sm"
+                    >I am interested Insights and News</label
+                  >
+                  <input
+                    type="checkbox"
+                    id="insights"
+                    name="insights"
+                    class="bg-white border-2 border-gray-300" />
+                </div>
+              </form>
+              <button
+                class="text-white w-1/4 justify-center items-start bg-[#6dbc45] hover:bg-green-500 text-sm font-semibold   px-4 py-2 mt-6">
+                Submit
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer
+        class="bg-slate-900 w-full flex-col flex justify-center items-center text-white">
+        <div class="w-full justify-center gap-2 flex-col flex items-center">
+          <div
+            class="flex px-4 w-full max-w-6xl justify-center py-10 lg:flex-row h-full items-center flex-col gap-4">
+            <div class="flex flex-col lg:w-1/5 justify-between h-60">
+              <img
+                src="assets/grc_footer.webp"
+                alt="logo"
+                class="py-8 px-4" />
+
+              <ul style="padding-top: 20px;"
+                class="flex flex-row gap-4 w-full items-center lg:justify-start justify-center">
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin text-4xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook text-4xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter text-4xl"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div style="display: flex; justify-content: space-between;"
+              class="grid lg:grid-cols-6 grid-cols-3 w-full gap-10 justify-start items-start">
+              <div class="flex flex-col gap-4">
+                <span class="text-green-500 border-b">Solutions</span>
+                <ul class="flex text-sm gap-2 flex-col">
+                  <li>
+                    <a href="#">AI and Machine Learning</a>
+                  </li>
+                  <li>
+                    <a href="#">Blockchain Computing</a>
+                  </li>
+                  <li>
+                    <a href="#">Enterprise / cloud / Hyperscale</a>
+                  </li>
+                  <li>
+                    <a href="#">Edge</a>
+                  </li>
+                  <li>
+                    <a href="#">High-Performance</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[2px] before:bg-gray-500">
+                <span class="text-green-500 border-b">Products</span>
+                <ul class="flex text-sm gap-2 flex-col">
+                  <li>
+                    <a href="#">ICEraQ</a>
+                  </li>
+                  <li>
+                    <a href="#">ICEtank</a>
+                  </li>
+                  <li>
+                    <a href="#">HashRaQ</a>
+                  </li>
+                  <li>
+                    <a href="#">HashTank</a>
+                  </li>
+                  <li>
+                    <a href="#">ElectroSafe Fluids</a>
+                  </li>
+                  <li>
+                    <a href="#">System Manager</a>
+                  </li>
+                  <li>
+                    <a href="#">Server Compatibility</a>
+                  </li>
+                </ul>
+              </div>
+              
+
+              <div style="display:none;"  class="flex flex-col gap-4">
+                <span class="text-green-500 border-b">Immersion-Ready IT</span>
+                <ul class="flex text-sm gap-2 flex-col">
+                  <li>
+                    <a href="#">Immersion-Ready IT</a>
+                  </li>
+                  <li>
+                    <a href="#">New Technology</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[2px] before:bg-gray-500">
+
+                <span class="text-green-500 border-b">About Us</span>
+                <ul class="flex text-sm gap-2 flex-col">
+                  <li>
+                    <a href="#">Our Expert Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Promise of Quality</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Patents</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Customers</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers at GRC</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[2px] before:bg-gray-500">
+                <span class="text-green-500 border-b">Support Center</span>
+                <ul class="flex text-sm gap-2 flex-col">
+                  <li>
+                    <a href="#">Case Studies</a>
+                  </li>
+                  <li>
+                    <a href="#">Learning Center</a>
+                  </li>
+                  <li>
+                    <a href="#">Research Center</a>
+                  </li>
+                  <li>
+                    <a href="#">Download Center</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[2px] before:bg-gray-500">
+                <span class="text-green-500 border-b">Blogs</span>
+                <ul class="flex text-sm gap-2 flex-col">
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="text-sm w-full max-w-6xl">
+            GRC, Inc.: 11525 Stonehollow Dr., Ste. A-150, Austin, TX 78758,
+            United States tel: +1.512.692.8003 ContactUs@grcooling.com
+          </p>
+          <div style="background: #0b6abe;"
+            class=" py-8 items-center mx-auto flex justify-center w-full">
+            <div class="max-w-6xl  w-full ">
+              <p class="text-sm">
+                © 2024 GRC, Green Revolution Cooling, and The Immersion Cooling
+                Authority are each registered trademarks of Green Revolution
+                Cooling, Inc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+      offset: 120, // Offset value in pixels
+      duration: 600, // Animation duration
+      easing: 'ease-in-out', // Easing function
+      delay: 100, // Global delay
+    }); // Initializes AOS
+    </script>
+
+  <script src="script.js"></script>
+</html>
