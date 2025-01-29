@@ -3,6 +3,9 @@
   font-family: "Gotham", sans-serif;
 } */
 
+li::marker {
+  color: blue;
+}
 
 [data-twe-dropdown-menu-ref] {
   display: none;
